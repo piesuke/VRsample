@@ -61,8 +61,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Live2D_SDK_Unity_2.1.04_2_jp\sample\SampleApp1\Assets\Editor\CreateCanvas.cs" />
-    <Compile Include="Assets\Live2D_SDK_Unity_2.1.04_2_jp\sample\SampleApp1\Assets\Editor\Live2DImporter.cs" />
+    <Compile Include="Assets\VRM\MToon\MToon\Editor\MToonInspector.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\BlendShapeAvatarEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\BlendShapeClipDrawer.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\BlendShapeClipEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\BlendShapeClipEditorHelper.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\BlendShapeClipSelector.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\PreviewEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\PreviewFaceRenderer.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\SerializedBlendShapeClipEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\BlendShape\Editor\VRMBlnedShapeProxyEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\Editor\Tests\EnumUtilTest.cs" />
+    <Compile Include="Assets\VRM\Scripts\Editor\Tests\MeshTests.cs" />
+    <Compile Include="Assets\VRM\Scripts\Editor\Tests\VRMBlendShapeKeyTest.cs" />
+    <Compile Include="Assets\VRM\Scripts\Editor\VRMMonoBehaviourComparator.cs" />
+    <Compile Include="Assets\VRM\Scripts\FirstPerson\Editor\RendererFirstPersonFlagsDrawer.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\vrmAssetPostprocessor.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMAssetWriter.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMExporterMenu.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMExportObjectEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMHumanoidNormalizerMenu.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMImporterMenu.cs" />
+    <Compile Include="Assets\VRM\Scripts\Format\Editor\VRMVersionMenu.cs" />
+    <Compile Include="Assets\VRM\Scripts\LookAt\Editor\VRMLookAtHeadEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\Meta\Editor\VRMMetaEditor.cs" />
+    <Compile Include="Assets\VRM\Scripts\SkinnedMeshUtility\Editor\BoneMeshEraserWizard.cs" />
+    <Compile Include="Assets\VRM\Scripts\SkinnedMeshUtility\Editor\MeshIntegrator.cs" />
+    <Compile Include="Assets\VRM\Scripts\SkinnedMeshUtility\Editor\MeshIntegratorWizard.cs" />
+    <Compile Include="Assets\VRM\Scripts\SpringBone\Editor\VRMSpringBoneColliderGroupEditor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\Core\Editor\MaterialTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\Core\Editor\UniGLTFTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\Core\Scripts\Editor\gltfAssetPostprocessor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\Core\Scripts\Editor\ImporterMenu.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\Core\Scripts\Editor\UniGLTFVersionMenu.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\DepthFirstScheduler\Editor\DepthFirstScheduler.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniHumanoid\Scripts\Editor\BoneMappingEditor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniHumanoid\Scripts\Editor\bvhAssetPostprocessor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniHumanoid\Scripts\Editor\HumanPoseTransferEditor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniHumanoid\Scripts\Editor\MuscleInspectorEditor.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniHumanoid\Scripts\Editor\Tests\BvhLoaderTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\IWriteStreamTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\JsonDiffTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\JsonFormatterTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\JsonParserTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\ArrayTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\BooleanTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\FloatTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\IntTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\MapTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\RawTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\MsgPack\StringTest.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\SchemaTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniJSON\Editor\Tests\ValidatorTests.cs" />
+    <Compile Include="Assets\VRM\UniGLTF\UniUnlit\Editor\UniUnlitEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -353,36 +404,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/Motion/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/RenderTexture/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/lib/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/Simple/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/TextureAtlas/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/Demo/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/SampleApp1/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/LipSync/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/Benchmark/Assets/Live2D/Live2DUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="Live2DUnity">
-      <HintPath>/Users/aonoryousuke/programming/unity/VRsamplegit/Assets/Live2D_SDK_Unity_2.1.04_2_jp/sample/StreamingAssets/Assets/Live2D/Live2DUnity.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
